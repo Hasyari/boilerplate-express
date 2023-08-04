@@ -58,10 +58,30 @@ let app = express();
 //     next();
 // });
 
+// Lesson 11    
+// app.get("/now", (req, res, next)=>{
+//     req.time = new Date().toString();
+//     next()
+// }, 
+// (req, res)=>{
+//     res.send({time: req.time});
+// }
+// )
 
+// lesson 12
+// app.get("/:word/echo", (req, res, next) => {
+//     res.send({echo: req.params.word})
+// });
 
+// lesson 13
+// app.get("/name", (req, res, next) => {
+//     let { first: firstName, last: lastName } = req.query;
+//     res.json({
+//         name: `${firstName} ${lastName}`
+//     });
+// });
 
-
+// lesson 14
 
 
 
